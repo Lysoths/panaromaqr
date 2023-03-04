@@ -207,23 +207,13 @@ code {
     flex-wrap: wrap;
   }
 
-  .list1-container {
-  }
-
   .right-side {
     width: 350px !important;
     margin-left: 0 !important;
   }
   .list1 {
-    width: 300px;
+    width: 300px !important;
     align-items: start;
-  }
-
-  .list1 .list1-price p {
-    color: #365b6d;
-    font-size: 1rem;
-    margin-bottom: 4px;
-    font-weight: 500;
   }
 
   .list1 .list1-items p {
@@ -236,6 +226,7 @@ code {
 
   .list1 .list1-items {
     width: 310px;
+    gap: 0px !important;
   }
 
   .App {
