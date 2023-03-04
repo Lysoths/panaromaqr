@@ -113,70 +113,54 @@ function App() {
         <div className='left-side'>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>KAHVALTILAR</h2>
+              <h2>KAHVALTI</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {kahvalti.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {kahvalti.map((item) => (
+              {kahvalti.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>BAŞLANGIÇ </h2>
+              <h2>BAŞLANGIÇ</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {baslangic.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {baslangic.map((item) => (
+              {baslangic.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>ANA YEMEK (Balık Çeşitleri)</h2>
+              <h2>ANA YEMEK (ET ÇEŞİTLERİ)</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {denizurunleri.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {denizurunleri.map((item) => (
+              {etcesitleri.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>ANA YEMEK (Et Çeşitleri) </h2>
+              <h2>ANA YEMEK (BALIK ÇEŞİTLERİ)</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {etcesitleri.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {etcesitleri.map((item) => (
+              {denizurunleri.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -184,70 +168,28 @@ function App() {
         <div className='right-side'>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>ALKOLLÜ İÇECEKLER </h2>
+              <h2>ALKOLSÜZ İÇECEKLER</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {bira.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {bira.map((item) => (
+              {mesrubat.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>EFE RAKI</h2>
+              <h2>BİRA</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {efe.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {efe.map((item) => (
+              {bira.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className='list1-container'>
-            <div className='list1-header'>
-              <h2>TEKİRDAĞ RAKI</h2>
-            </div>
-            <div className='list1'>
-              <div className='list1-items'>
-                {tekirdag.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {tekirdag.map((item) => (
-                  <p>{item.price} ₺</p>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className='list1-container'>
-            <div className='list1-header'>
-              <h2>ALKOLSÜZ İÇECEKLER </h2>
-            </div>
-            <div className='list1'>
-              <div className='list1-items'>
-                {mesrubat.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {mesrubat.map((item) => (
-                  <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='list1-container'>
@@ -255,33 +197,51 @@ function App() {
               <h2>YENİ RAKI</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {yeniraki.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {yeniraki.map((item) => (
+              {yeniraki.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='list1-container'>
             <div className='list1-header'>
-              <h2>BEYLERBEYİ</h2>
+              <h2>TEKİRDAĞ RAKI</h2>
             </div>
             <div className='list1'>
-              <div className='list1-items'>
-                {beyler.map((item) => (
-                  <p>{item.item}</p>
-                ))}
-              </div>
-              <div className='list1-price'>
-                {beyler.map((item) => (
+              {tekirdag.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
                   <p>{item.price} ₺</p>
-                ))}
-              </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className='list1-container'>
+            <div className='list1-header'>
+              <h2>EFE RAKI</h2>
+            </div>
+            <div className='list1'>
+              {efe.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
+                  <p>{item.price} ₺</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className='list1-container'>
+            <div className='list1-header'>
+              <h2>BEYLERBEYİ RAKI</h2>
+            </div>
+            <div className='list1'>
+              {beyler.map((item) => (
+                <div className='list1-items'>
+                  <p>{item.item} </p>
+                  <p>{item.price} ₺</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
