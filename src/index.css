@@ -188,6 +188,10 @@ code {
   .App {
     width: 98vw;
     margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .App .header-container .header h1 {
     color: #365b6d;
@@ -204,7 +208,6 @@ code {
   }
 
   .list1-container {
-    padding: 10px;
     min-height: fit-content;
   }
 
@@ -214,6 +217,7 @@ code {
   }
   .list1 {
     width: 300px;
+    align-items: start;
   }
 
   .list1 .list1-price p {
@@ -231,11 +235,15 @@ code {
     letter-spacing: 1px;
   }
 
+  .list1 .list1-items {
+    width: 300px;
+  }
+
   .App {
     padding-top: 190px;
   }
 
   .list1-container {
-    width: auto;
+    width: 300px;
   }
 }
