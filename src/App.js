@@ -64,27 +64,30 @@ const yeniraki = [
 ];
 
 const efe = [
-  { item: "Tek", price: "100" },
-  { item: "Duble", price: "120" },
+  { item: "Tek", price: "-" },
+  { item: "Duble", price: "-" },
   { item: "20Lik", price: "-" },
-  { item: "35 CL", price: "380" },
-  { item: "70 CL", price: "650" },
-  { item: "100 CL ", price: "900" },
+  { item: "35 CL", price: "420" },
+  { item: "50 CL", price: "570" },
+  { item: "70 CL", price: "780" },
+  { item: "100 CL ", price: "1000" },
 ];
 
 const tekirdag = [
   { item: "Tek", price: "100" },
   { item: "Duble", price: "120" },
   { item: "20Lik", price: "-" },
-  { item: "35 CL", price: "380" },
-  { item: "70 CL", price: "650" },
-  { item: "100 CL ", price: "900" },
+  { item: "35 CL", price: "420" },
+  { item: "50 CL", price: "570" },
+  { item: "70 CL", price: "780" },
+  { item: "100 CL ", price: "1000" },
 ];
 
 const beyler = [
-  { item: "35 CL", price: "380" },
-  { item: "70 CL", price: "650" },
-  { item: "100 CL ", price: "900" },
+  { item: "35 CL", price: "490" },
+  { item: "50 CL", price: "680" },
+  { item: "70 CL", price: "890" },
+  { item: "100 CL ", price: "1250" },
 ];
 
 function App() {
