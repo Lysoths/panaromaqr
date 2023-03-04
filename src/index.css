@@ -1,13 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Montserrat:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Raleway:wght@400;500;700;900&family=Red+Hat+Text:wght@700&family=Rubik:wght@400;500;700&family=Syne:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Syne", sans-serif;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #365b6d;
+  padding: 10px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  width: 90vw;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 30px 150px;
+}
+.App .header-container .header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.App .header-container .header h1 {
+  color: #365b6d;
+  font-size: 3.5rem;
+}
+
+.App .header-container .header h2 {
+  color: #1d4355;
+}
+.header {
+  margin-bottom: 85px;
+}
+
+.foods-container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+.left-side {
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+}
+.middle {
+  width: 4px;
+  min-height: 100%;
+  background-color: #289dd2;
+  border-radius: 13px;
+}
+
+.right-side {
+  width: 350px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.list1-container {
+  width: max-content;
+  margin-bottom: 25px;
+  min-height: 280px;
+}
+.list1-container h2 {
+  color: #1d4355;
+  margin-bottom: 20px;
+}
+.list1 {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  justify-content: space-between;
+}
+
+.list1 .list1-items p {
+  color: #365b6d;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.list1 .list1-price p {
+  color: #365b6d;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.a {
+  position: absolute;
+  z-index: 0;
+  bottom: -50px;
+  right: -40px;
+}
+
+.a img {
+  width: 200px;
+}
+.b {
+  position: absolute;
+  z-index: 0;
+  bottom: -30px;
+  left: -40px;
+}
+
+.b img {
+  width: 200px;
+}
+
+.c {
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: -40px;
+}
+
+.c img {
+  width: 200px;
+}
+
+.d {
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  right: -40px;
+}
+
+.d img {
+  width: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  .header-container {
+    min-width: 100%;
+  }
+  .foods-container {
+    justify-content: center;
+    width: 100%;
+  }
+  .middle {
+    display: none;
+  }
+  .App {
+    width: 100vw;
+  }
+  .App .header-container .header h1 {
+    color: #365b6d;
+    font-size: 2.8rem;
+  }
+
+  .App .header-container .header h2 {
+    color: #1d4355;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .foods-container {
+    flex-wrap: wrap;
+  }
+
+  .list1-container {
+    padding: 10px;
+    min-height: fit-content;
+  }
+
+  .right-side {
+    width: 350px !important;
+    margin-left: 0 !important;
+  }
+  .list1 {
+    width: 300px;
+  }
+
+  .list1 .list1-price p {
+    color: #365b6d;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .list1 .list1-items p {
+    color: #365b6d;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .App {
+    padding-top: 190px;
+  }
 }
