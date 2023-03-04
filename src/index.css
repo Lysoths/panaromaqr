@@ -93,6 +93,7 @@ code {
   min-width: 340px;
   justify-content: space-between;
 }
+
 .list1 .list1-items {
   display: flex;
   gap: 110px;
@@ -232,5 +233,9 @@ code {
 
   .App {
     padding-top: 190px;
+  }
+
+  .list1-container {
+    width: auto;
   }
 }
